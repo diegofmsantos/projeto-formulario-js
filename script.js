@@ -1,7 +1,7 @@
 const form = document.querySelector("#form")
 const nameInput = document.querySelector("#name")
+const ageInput = document.querySelector("#age")
 const emailInput = document.querySelector("#email")
-const passwordInput = document.querySelector("#password")
 const jobSelect = document.querySelector("#job")
 const messageTextarea = document.querySelector("#message")
 
@@ -14,15 +14,15 @@ form.addEventListener("submit", (event) => {
         return
     }
 
-    // Verifica se o email está vazio
-    if(emailInput.value === "" || !isEmailValid(emailInput.value)) {
-        alert('Por favor, preencha o seu e-mail.')
+    // Verifica se a idade está vazio
+    if(ageInput.value === "") {
+        alert('Por favor, preencha a sua senha.')
         return
     }
 
-    // Verifica se a senha está vazia
-    if(passwordInput.value === "") {
-        alert('Por favor, preencha a sua senha.')
+    // Verifica se o email está vazio
+    if(emailInput.value === "" || !isEmailValid(emailInput.value)) {
+        alert('Por favor, preencha o seu e-mail.')
         return
     }
 
